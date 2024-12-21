@@ -1,9 +1,11 @@
 from Character import Character
 from Berserk import Berserk
 from Tank import Tank
-player1 = Character("Jonny", 120, 7, 0)
+from Ninja import Ninja
+from Vampyre import Vampyre
+player1 = Ninja("Jonny", 120, 7, 0)
 player1.print_stats()
-player2 = Tank("Volodya", 100, 10, 4)
+player2 = Vampyre("Volodya", 100, 10, 4)
 player2.print_stats()
 
 print("\n")
