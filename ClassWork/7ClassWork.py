@@ -16,10 +16,12 @@ while True:
     try:
         index = input_int("Введіть індекс фрукта, який хочете обрати: ")
 
-        if 0 < index < len(fruits):
-            print(f"Ви обрали: {fruits[index]}")
-            break
-        else:
-            print("Немає фрукта з таким індексом. Спробуйте ще раз.")
+
+        print(f"Ви обрали: {fruits[index]}")
+        break
+
+    except IndexError:
+        print("Немає фрукта з таким індексом. Спробуйте ще раз.")
+
     except Exception as pomulochka:
-        print(f"Сталася помилка: {pomulochka}")
+        print(f"Звемо вчителя щоб розібрати помилку: {pomulochka}")
